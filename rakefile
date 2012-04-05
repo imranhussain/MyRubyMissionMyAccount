@@ -1,0 +1,6 @@
+require 'cucumber/rake/task'
+
+
+Cucumber::Rake::Task.new(:default) do |t|
+  t.cucumber_opts = " features --format html --out results.html"
+end
