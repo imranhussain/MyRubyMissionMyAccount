@@ -3,7 +3,7 @@ Given /^I am on sky com homepage$/ do
 end
 
 Given /^I am on the signin page$/ do
-  $browser.goto 'http://sstp02.ocp.bskyb.com'
+  $browser.goto 'http://sstp04.ocp.bskyb.com'
 end
 
 When /^I login$/ do
@@ -16,4 +16,7 @@ Given /^I am logged in$/ do
   step %{I am on the signin page}
   step %{I login}
   sleep 4
+end
+Given /^I am viewing the my account page$/ do
+  step %{I am logged in}
 end
